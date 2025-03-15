@@ -3,9 +3,8 @@ import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 import React, { useEffect, useState } from 'react';
 
-
 const RandomMarkdown = () => {
-  const [randomValue, setRandomValue] = useState(null);
+  const [contentList, setContentList] = useState([]); // List of content (text and images)
   const [loading, setLoading] = useState(true); // Track loading state
   const [error, setError] = useState(null); // Track errors
 
@@ -31,28 +30,31 @@ const RandomMarkdown = () => {
 
         console.log('Matched list items:', listItems); // Log the matched list items
 
-        // Clean the extracted list items and check for images or text
-        const values = listItems.map(item => item.replace(/^\s*- /, '').trim());
-        console.log('Extracted values:', values); // Log the extracted values
+        // Clean the extracted list items and determine if they are text or images
+        const parsedItems = listItems.map(item => {
+          const cleanedItem = item.replace(/^\s*- /, '').trim();
 
-        if (values.length === 0) {
-          throw new Error('No valid list items found after cleaning.');
-        }
+          // Separate text from images using a regular expression to check for images
+          const imageRegex = /!\[.*?\]\((.*?)\)/;
+          const textWithImage = [];
 
-        // Randomly select one value from the list
-        const randomValue = values[Math.floor(Math.random() * values.length)];
-        console.log('Random value selected:', randomValue); // Log the random value
+          // Check if there is an image and split the item into parts
+          if (imageRegex.test(cleanedItem)) {
+            // Split the text from the image
+            const imageUrl = cleanedItem.match(imageRegex)[1];
+            const textBeforeImage = cleanedItem.replace(imageRegex, '').trim();
+            textWithImage.push({ type: 'text', content: textBeforeImage });
+            textWithImage.push({ type: 'image', url: imageUrl });
+          } else {
+            textWithImage.push({ type: 'text', content: cleanedItem });
+          }
 
-        // Check if the selected value is an image URL
-        const imageRegex = /!\[.*?\]\((.*?)\)/; // Regex for markdown image syntax
-        const isImage = imageRegex.test(randomValue);
+          return textWithImage;
+        });
 
-        if (isImage) {
-          const imageUrl = randomValue.match(imageRegex)[1];
-          setRandomValue({ type: 'image', url: imageUrl });
-        } else {
-          setRandomValue({ type: 'text', content: randomValue });
-        }
+        console.log('Parsed list items:', parsedItems); // Log the parsed items
+
+        setContentList(parsedItems); // Store the parsed content list
       } catch (error) {
         console.error('Error:', error);
         setError(error.message);
@@ -74,14 +76,22 @@ const RandomMarkdown = () => {
 
   return (
     <div className="random-markdown">
-      {randomValue ? (
-        randomValue.type === 'image' ? (
-          <img src={randomValue.url} alt="Random from Markdown" />
-        ) : (
-          <p>{randomValue.content}</p>
-        )
+      {contentList.length === 0 ? (
+        <p>No content found.</p>
       ) : (
-        <p>No valid content found.</p>
+        contentList.map((item, index) => (
+          <div key={index} className="markdown-item">
+            {item.map((subItem, subIndex) => (
+              <div key={subIndex}>
+                {subItem.type === 'image' ? (
+                  <img src={subItem.url} alt={`Image ${subIndex}`} />
+                ) : (
+                  <p>{subItem.content}</p>
+                )}
+              </div>
+            ))}
+          </div>
+        ))
       )}
     </div>
   );
