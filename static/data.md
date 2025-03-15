@@ -5,3 +5,4 @@
 - "My toddler may not understand the magic of eBooks, but at least they can't rip the pages out! E-readers are great for avoiding book destruction, but they lack the charm of a toddler’s giggle when they reach the ‘end’ and demand another story."
 - "Paperbacks are perfect for snuggling up and flipping through together—unless your toddler wants to 'help' and rips every page with out. But eBooks?
 - "If you touch that e-reader, you'll trigger an existential crisis—it's already trying to decide if it's a book or a screen."
+- ![img](./img/book01.png)
