@@ -12,7 +12,7 @@ const RandomMarkdown = () => {
     const fetchRandomMarkdownValue = async () => {
       try {
         console.log('Fetching markdown file...');
-        const response = await fetch('RandomText/data.md'); // Path to your Markdown file
+        const response = await fetch('/RandomText/data.md'); // Path to your Markdown file
 
         if (!response.ok) {
           throw new Error(`Failed to fetch markdown file: ${response.statusText}`);
