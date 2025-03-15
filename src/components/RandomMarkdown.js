@@ -1,10 +1,10 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const RandomMarkdown = () => {
-  const [contentList, setContentList] = useState([]); // List of content (text and images)
+  const [randomItem, setRandomItem] = useState(null); // Store the randomly selected item
   const [loading, setLoading] = useState(true); // Track loading state
   const [error, setError] = useState(null); // Track errors
 
@@ -54,7 +54,9 @@ const RandomMarkdown = () => {
 
         console.log('Parsed list items:', parsedItems); // Log the parsed items
 
-        setContentList(parsedItems); // Store the parsed content list
+        // Randomly select one item from the list
+        const randomIndex = Math.floor(Math.random() * parsedItems.length);
+        setRandomItem(parsedItems[randomIndex]); // Set the randomly selected item
       } catch (error) {
         console.error('Error:', error);
         setError(error.message);
@@ -74,25 +76,21 @@ const RandomMarkdown = () => {
     return <p>Error: {error}</p>;
   }
 
+  if (!randomItem || randomItem.length === 0) {
+    return <p>No valid content found.</p>;
+  }
+
   return (
     <div className="random-markdown">
-      {contentList.length === 0 ? (
-        <p>No content found.</p>
-      ) : (
-        contentList.map((item, index) => (
-          <div key={index} className="markdown-item">
-            {item.map((subItem, subIndex) => (
-              <div key={subIndex}>
-                {subItem.type === 'image' ? (
-                  <img src={subItem.url} alt={`Image ${subIndex}`} />
-                ) : (
-                  <p>{subItem.content}</p>
-                )}
-              </div>
-            ))}
-          </div>
-        ))
-      )}
+      {randomItem.map((subItem, index) => (
+        <div key={index}>
+          {subItem.type === 'image' ? (
+            <img src={subItem.url} alt={`Image ${index}`} />
+          ) : (
+            <p>{subItem.content}</p>
+          )}
+        </div>
+      ))}
     </div>
   );
 };
