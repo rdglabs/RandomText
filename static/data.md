@@ -34,4 +34,3 @@ At the end of the day, whether you swear by your eReader or clutch your hardcove
   ![img](./img/8%20-%20Zelda.jpg)  
   ![img](./img/9%20-%20Zelda.png) 
 - ![img](./img/rickroll.gif)
-- 
