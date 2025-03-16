@@ -75,7 +75,7 @@ const config = {
     ({
       colorMode: {
         defaultMode: 'dark',  // Set 'dark' as the default mode (or 'light' if you prefer)
-        disableSwitch: false, // Allow users to toggle between dark and light modes
+        disableSwitch: true, // Allow users to toggle between dark and light modes
       },
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',

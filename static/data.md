@@ -13,4 +13,5 @@
 - “‘Season to taste’—so you mean dump in an unreasonable amount of garlic and pray for the best?”
 - “Step one: gather ingredients. Step two: realize you’re missing half of them. Step three: improvise and hope it’s still edible.”
 - “Oh, this recipe serves six? Cute. I’ll be eating the whole thing myself in one sitting, thanks.”
+- ![img](./img/1%20-%20Zelda.png) ![img](./img/2%20-%20Zelda.png) ![img](./img/3%20-%20Zelda.png) ![img](./img/4%20-%20Zelda.png) ![img](./img/5%20-%20Zelda.jpg) ![img](./img/6%20-%20Zelda.png) ![img](./img/7%20-%20Zelda.png) ![img](./img/8%20-%20Zelda.jpg) ![img](./img/9%20-%20Zelda.png)
 

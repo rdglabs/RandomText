@@ -29,19 +29,34 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* Flexbox for navbar */
 .navbar {
   display: flex;
-  justify-content: space-between;  /* Adjusts space between navbar items */
-  align-items: center;  /* Vertically center items in the navbar */
-  min-height: 120px;  /* Increase navbar height */
-  padding: 0 20px;
+  justify-content: space-between; /* Space out navbar items */
+  align-items: center; /* Centers all items vertically */
+  min-height: 100px; /* Ensure navbar height */
+  padding: 0 5vw; /* Responsive padding */
+}
+
+.navbar__inner {
+  display: flex;
+  align-items: center; /* Ensures navbar content is vertically centered */
+  width: 100%; /* Full width to control inner alignment */
 }
 
 /* Adjust logo size */
-.navbar__logo img {
-  height: 70px;  /* Adjust logo height */   /* Maintain aspect ratio */
+.navbar__logo {
+  display: flex;
+  align-items: center; /* Ensures logo aligns perfectly with navbar__inner */
 }
+
+.navbar__logo img {
+  height: 90px; /* Sets a good height for visibility */
+  min-height: 80px; /* Ensures a minimum size */
+  max-height: 100px; /* Prevents overflow */
+  width: auto; /* Maintain aspect ratio */
+  display: block;
+}
+
 
 .random-markdown {
   color: var(--ifm-color-primary); /* Keeps text color consistent with theme */
