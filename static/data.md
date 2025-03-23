@@ -27,6 +27,15 @@ And let’s talk about cost. Sure, an eReader is an investment, and eBooks are o
 
 At the end of the day, whether you swear by your eReader or clutch your hardcovers like a lifeline, reading is what matters. Some of us embrace technology; others prefer the old-school charm of ink and paper. And then there are the truly unhinged ones—those who happily use both. Monsters.
 
+- Oh, honey, scanning random QR codes like it’s a shortcut to heaven? Bless your heart. That’s about as smart as licking a frozen flagpole in the dead of winter.  You might as well hand over your phone, your bank info, and the deed to your grandma’s house while you’re at it. These little pixel traps can lead you straight into a mess bigger than Aunt Carol’s third divorce—malware, stolen passwords, or worse, your phone spillin’ all your business faster than the church ladies at Sunday brunch.  
+
+Now, let’s get one thing clear—not every QR code is your friend. Just ‘cause it’s slapped on a flyer, taped to a gas pump, or stuck on some random street pole doesn’t mean it’s safe. Hackers are slicker than butter on a hot biscuit, and they love trickin’ folks into scanin’ codes that hijack your info faster than your cousin Jimmy borrows money he ain’t never gonna pay back. And don’t get me started on them fake payment codes—one bad scan, and your cash is gone quicker than a plate of biscuits at a family reunion.  
+
+Be smart, darlin’. If you absolutely must scan a QR code, at least act like you got some sense. Check the source, don’t scan nothin’ from a sketchy piece of paper taped to a wall, and for the love of all things holy, use your phone’s security settings. And if some shady-lookin’ sign tells you you’ve won a *free iPhone* just by scanin’ a QR code, you best take a step back and ask yourself—when’s the last time Apple handed out free iPhones like they’re samples at Costco? That’s right, never.  
+
+So next time a random QR code is callin’ your name, don’t just scan it like it’s a golden ticket to the good life. If you wouldn’t give your Social Security number to a man in a van sellin’ "discount" car insurance, then don’t go tappin’ every code you see like it’s a button at the honky-tonk jukebox. Your cybersecurity—and your common sense—deserve better.
+
+
 - ![img](./img/1%20-%20Zelda.png)  
   ![img](./img/2%20-%20Zelda.png)  
   ![img](./img/3%20-%20Zelda.png)  
