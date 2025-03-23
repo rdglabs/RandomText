@@ -3,6 +3,8 @@
     - Justin
     
     - Skyler
+  
+  ![img](./img/veggietales.gif)
 
 
 - “I love my eReader. It lets me buy books instantly, which is fantastic… until I wake up to a credit card statement that looks like I funded a small library.”
