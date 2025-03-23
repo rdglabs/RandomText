@@ -1,6 +1,8 @@
 - People who don't understand this joke: 
     Justin  
+
     Skyler  
+    
 - “I love my eReader. It lets me buy books instantly, which is fantastic… until I wake up to a credit card statement that looks like I funded a small library.”
 - "My toddler may not understand the magic of eBooks, but at least they can't rip the pages out! E-readers are great for avoiding book destruction, but they lack the charm of a toddler’s giggle when they reach the ‘end’ and demand another story."
 - "Paperbacks are perfect for snuggling up and flipping through together—unless your toddler wants to 'help' and rips every page out. But eBooks?
