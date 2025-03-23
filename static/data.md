@@ -1,7 +1,6 @@
 - People who don't understand this joke: 
     
     - Justin
-    
     - Skyler
   
   ![img](./img/veggietales.gif)
