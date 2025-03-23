@@ -65,7 +65,7 @@ const RandomMarkdown = () => {
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', width: '100%' }}>
       <ReactMarkdown>{randomItem}</ReactMarkdown>
       <button onClick={fetchRandomMarkdownValue} style={{ marginTop: '20px', padding: '10px', fontSize: '16px', cursor: 'pointer', borderRadius: '5px', border: 'none', backgroundColor: '#007BFF', color: 'white' }}>
-        Don't Click Me
+        Random Item
       </button>
     </div>
   );
